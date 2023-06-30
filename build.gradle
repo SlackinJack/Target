@@ -20,8 +20,8 @@ sourceCompatibility = JavaVersion.VERSION_1_7
 targetCompatibility = JavaVersion.VERSION_1_7
 version = "1.8.9-${VersionMajor}.${VersionMinor}.${VersionRev}"
 
-group= "fbdius.bn3nid.beabv3"
-archivesBaseName = "Beabv3"
+group= "ca.slackinjack.target"
+archivesBaseName = "Target"
 
 minecraft {
     version = "1.8.9-11.15.1.1722"
@@ -29,8 +29,7 @@ minecraft {
 	makeObfSourceJar = false
 }
 
-processResources
-{
+processResources {
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
 
